@@ -1,17 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Comment, { CommentProps, UserInfo } from "./Comment";
-
-export interface PostProps {
-  id: string;
-  user: UserInfo;
-  createdAt: string;
-  content: string;
-  imageUrl?: string;
-  likes: number;
-  comments?: CommentProps[];
-  showComments?: boolean;
-}
+import Comment from "./Comment";
+import type { Post as PostProps } from "@/types/post";
 
 export function Post({
   id,

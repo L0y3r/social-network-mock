@@ -1,17 +1,16 @@
+import type { UserInfo } from "@/types/user-info";
 import Image from "next/image";
 
-interface Profile {
-  name: string;
-  profilePicUrl: string;
+interface ProfileInfo extends UserInfo {
   role: string;
   email: string;
   location: string;
-  bio: string;
+  bio: string;  
 }
 
 export default async function Profile() {
   const profileRequest = await fetch("http://localhost:3001/profile");
-  const profile = (await profileRequest.json()) as Profile;
+  const profile = (await profileRequest.json()) as ProfileInfo;
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 bg-white rounded-xl shadow-2xl p-8 transform transition-all duration-300 hover:scale-105">

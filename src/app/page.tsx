@@ -1,4 +1,5 @@
-import { Post, PostProps } from "@/components/Post";
+import { Post } from "@/components/Post";
+import type { Post as PostProps } from "@/types/post";
 
 export default async function Feed() {
   const postsRequest = await fetch("http://localhost:3001/posts");

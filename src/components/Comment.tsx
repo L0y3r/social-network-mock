@@ -1,14 +1,5 @@
+import type { Comment as CommentProps } from "@/types/comment";
 import Image from "next/image";
-
-export interface UserInfo {
-  name: string;
-  profilePicUrl: string;
-}
-
-export interface CommentProps {
-  user: UserInfo;
-  content: string;
-}
 
 export default function Comment({ user, content }: CommentProps) {
   return (

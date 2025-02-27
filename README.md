@@ -1,4 +1,4 @@
-# Social Media Project
+# Social Media Mock
 
 This project is a simple social media application built with Next.js and React, featuring three main routes: feed, profile, and post. It uses a mock server with `json-server` to simulate a backend API.
 
@@ -6,8 +6,6 @@ This project is a simple social media application built with Next.js and React, 
 
 ```
 social-media-mock/
-├── public/
-│   └── ... (static assets)
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx
@@ -18,6 +16,8 @@ social-media-mock/
 │   │   │   └── page.tsx
 │   ├── components/
 │   │   └── ... (reusable components)
+│   └── types/
+│       └── ... (typescript types)
 ├── db.json
 ├── package.json
 ├── package-lock.json
@@ -27,12 +27,12 @@ social-media-mock/
 └── README.md
 ```
 
-* **`public/`**: Contains static assets like images and fonts.
 * **`src/app/`**: Holds the Next.js pages, which define the application's routes.
     * `page.tsx`: Displays a list of friends' posts.
     * `post/[slug]/page.tsx`: Displays a single post based on the `id` parameter.
     * `profile/page.tsx`: Shows the user's profile information.
 * **`src/components/`**: Contains reusable React components.
+* **`src/types/`**: Contains TypeScript type definitions.
 * **`db.json`**: Mock database for `json-server`.
 * **`package.json`**: Project dependencies and scripts.
 * **`postcss.config.js`**: PostCSS configuration for Tailwind CSS.
@@ -41,8 +41,8 @@ social-media-mock/
 
 ## Routes
 
+2.  **`/`**: (feed) Lists posts from friends.
 1.  **`/profile`**: Displays the user's profile information.
-2.  **`/feed`**: Lists posts from friends.
 3.  **`/post/:id`**: Displays a specific post based on the `id` parameter.
 
 ## Mock Server
@@ -59,8 +59,8 @@ The project uses `json-server` to simulate a backend API.
 
 ## Dev Dependencies
 
-* **`concurrently`**: Runs multiple commands concurrently.
-* **`eslint`**: JavaScript linter for code quality.
+* **`concurrently`**: Runs next and json-server at the same time.
+* **`eslint`**: TypeScript linter for code quality.
 * **`json-server`**: Mock REST API server.
 * **`postcss`**: CSS transformation tool.
 * **`tailwindcss`**: Utility-first CSS framework.
@@ -71,8 +71,8 @@ The project uses `json-server` to simulate a backend API.
 1.  **Clone the repository:**
 
     ```bash
-    git clone [repository-url]
-    cd social-media-project
+    git clone git@github.com:L0y3r/social-network-mock.git
+    cd social-media-mock
     ```
 
 2.  **Install dependencies:**
@@ -88,8 +88,3 @@ The project uses `json-server` to simulate a backend API.
     ```
 
 4.  **Open your browser and navigate to `http://localhost:3000`**.
-
-## Running the mock server alone
-
-```bash
-npm run dev:server
