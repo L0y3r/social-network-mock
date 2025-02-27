@@ -1,15 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
-interface UserInfo {
-  name: string;
-  profilePicUrl: string;
-}
-
-interface Comment {
-  user: UserInfo;
-  content: string;
-}
+import Comment, { CommentProps, UserInfo } from "./Comment";
 
 export interface PostProps {
   id: string;
@@ -18,26 +9,8 @@ export interface PostProps {
   content: string;
   imageUrl?: string;
   likes: number;
-  comments?: Comment[];
+  comments?: CommentProps[];
   showComments?: boolean;
-}
-
-function Comment({ user, content }: Comment) {
-  return (
-    <div className="mb-4 flex items-start space-x-4">
-      <Image
-        className="h-8 w-8 rounded-full object-cover"
-        src={user.profilePicUrl}
-        width={61}
-        height={61}
-        alt="Commenter 1"
-      />
-      <div className="flex-1">
-        <p className="text-sm text-gray-800 font-semibold">{user.name}</p>
-        <p className="text-sm text-gray-600">{content}</p>
-      </div>
-    </div>
-  );
 }
 
 export function Post({
