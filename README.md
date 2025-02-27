@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Social Media Project
+
+This project is a simple social media application built with Next.js and React, featuring three main routes: feed, profile, and post. It uses a mock server with `json-server` to simulate a backend API.
+
+## Project Structure
+
+```
+social-media-mock/
+├── public/
+│   └── ... (static assets)
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── post/[slug]
+│   │   │   └── page.tsx
+│   │   ├── profile
+│   │   │   └── page.tsx
+│   ├── components/
+│   │   └── ... (reusable components)
+├── db.json
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
+```
+
+* **`public/`**: Contains static assets like images and fonts.
+* **`src/app/`**: Holds the Next.js pages, which define the application's routes.
+    * `page.tsx`: Displays a list of friends' posts.
+    * `post/[slug]/page.tsx`: Displays a single post based on the `id` parameter.
+    * `profile/page.tsx`: Shows the user's profile information.
+* **`src/components/`**: Contains reusable React components.
+* **`db.json`**: Mock database for `json-server`.
+* **`package.json`**: Project dependencies and scripts.
+* **`postcss.config.js`**: PostCSS configuration for Tailwind CSS.
+* **`tailwind.config.js`**: Tailwind CSS configuration.
+* **`tsconfig.json`**: TypeScript configuration.
+
+## Routes
+
+1.  **`/profile`**: Displays the user's profile information.
+2.  **`/feed`**: Lists posts from friends.
+3.  **`/post/:id`**: Displays a specific post based on the `id` parameter.
+
+## Mock Server
+
+The project uses `json-server` to simulate a backend API.
+
+* The mock data is stored in `db.json`.
+* To start the mock server, run: `npm run dev:server`
+
+## Dependencies
+
+* **`next`**: React framework for server-side rendering and routing.
+* **`react`**: JavaScript library for building user interfaces.
+
+## Dev Dependencies
+
+* **`concurrently`**: Runs multiple commands concurrently.
+* **`eslint`**: JavaScript linter for code quality.
+* **`json-server`**: Mock REST API server.
+* **`postcss`**: CSS transformation tool.
+* **`tailwindcss`**: Utility-first CSS framework.
+* **`typescript`**: JavaScript superset for static typing.
 
 ## Getting Started
 
-First, run the development server:
+1.  **Clone the repository:**
+
+    ```bash
+    git clone [repository-url]
+    cd social-media-project
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server and mock server concurrently:**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open your browser and navigate to `http://localhost:3000`**.
+
+## Running the mock server alone
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm run dev:server
