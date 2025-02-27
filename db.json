@@ -1,6 +1,7 @@
 {
     "profile": {
         "name": "John Doe",
+        "profilePicUrl": "https://placehold.co/200",
         "role": "Software Developer",
         "email": "john.doe@example.com",
         "location": "New York, USA",
