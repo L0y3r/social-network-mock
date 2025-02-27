@@ -15,7 +15,7 @@
           },
           "createdAt": "2023-10-27T10:00:00Z",
           "content": "Just enjoyed a delicious brunch with friends! 🍳",
-          "imageUrl": "https://source.unsplash.com/random/800x600?food",
+          "imageUrl": "https://placehold.co/600x400",
           "likes": 25,
           "comments": [
             {
@@ -42,7 +42,7 @@
           },
           "createdAt": "2023-10-27T11:30:00Z",
           "content": "Exploring new hiking trails today! ⛰️",
-          "imageUrl": "https://source.unsplash.com/random/800x600?mountain",
+          "imageUrl": "https://placehold.co/600x400",
           "likes": 38,
           "comments": [
             {
@@ -82,7 +82,7 @@
           },
           "createdAt": "2023-10-27T15:20:00Z",
           "content": "Enjoying a relaxing afternoon with a good book. 📚",
-          "imageUrl": "https://source.unsplash.com/random/800x600?book",
+          "imageUrl": "https://placehold.co/600x400",
           "likes": 42,
           "comments": [
             {
@@ -109,7 +109,7 @@
           },
           "createdAt": "2023-10-27T17:10:00Z",
           "content": "Sunset vibes! 🌅",
-          "imageUrl": "https://source.unsplash.com/random/800x600?sunset",
+          "imageUrl": "https://placehold.co/600x400",
           "likes": 60,
           "comments": []
         },
@@ -141,7 +141,7 @@
           },
           "createdAt": "2023-10-27T21:30:00Z",
           "content": "Movie night! 🍿",
-          "imageUrl": "https://source.unsplash.com/random/800x600?movie",
+          "imageUrl": "https://placehold.co/600x400",
           "likes": 30,
           "comments": [
             {
@@ -173,7 +173,7 @@
           },
           "createdAt": "2023-10-28T10:30:00Z",
           "content": "Visiting the museum today. 🎨",
-          "imageUrl": "https://source.unsplash.com/random/800x600?museum",
+          "imageUrl": "https://placehold.co/600x400",
           "likes": 28,
           "comments": []
         },
