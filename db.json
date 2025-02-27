@@ -1,0 +1,193 @@
+{
+    "profile": {
+        "name": "John Doe",
+        "role": "Software Developer",
+        "email": "john.doe@example.com",
+        "location": "New York, USA",
+        "bio": "Passionate about building innovative web applications"
+    },
+    "posts":[
+        {
+          "id": 1,
+          "user": {
+            "name": "Alice Smith",
+            "profilePicUrl": "https://randomuser.me/api/portraits/women/1.jpg"
+          },
+          "createdAt": "2023-10-27T10:00:00Z",
+          "content": "Just enjoyed a delicious brunch with friends! 🍳",
+          "imageUrl": "https://source.unsplash.com/random/800x600?food",
+          "likes": 25,
+          "comments": [
+            {
+              "user": {
+                "name": "Bob Williams",
+                "profilePicUrl": "https://randomuser.me/api/portraits/men/2.jpg"
+              },
+              "content": "Looks amazing!"
+            },
+            {
+              "user": {
+                "name": "Carol Davis",
+                "profilePicUrl": "https://randomuser.me/api/portraits/women/3.jpg"
+              },
+              "content": "Where was this?"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "user": {
+            "name": "Bob Williams",
+            "profilePicUrl": "https://randomuser.me/api/portraits/men/2.jpg"
+          },
+          "createdAt": "2023-10-27T11:30:00Z",
+          "content": "Exploring new hiking trails today! ⛰️",
+          "imageUrl": "https://source.unsplash.com/random/800x600?mountain",
+          "likes": 38,
+          "comments": [
+            {
+              "user": {
+                "name": "Alice Smith",
+                "profilePicUrl": "https://randomuser.me/api/portraits/women/1.jpg"
+              },
+              "content": "Beautiful scenery!"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "user": {
+            "name": "Carol Davis",
+            "profilePicUrl": "https://randomuser.me/api/portraits/women/3.jpg"
+          },
+          "createdAt": "2023-10-27T13:45:00Z",
+          "content": "Coding late into the night... 💻",
+          "imageUrl": null,
+          "likes": 15,
+          "comments": [
+            {
+              "user": {
+                "name": "Bob Williams",
+                "profilePicUrl": "https://randomuser.me/api/portraits/men/2.jpg"
+              },
+              "content": "Good luck!"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "user": {
+            "name": "David Evans",
+            "profilePicUrl": "https://randomuser.me/api/portraits/men/4.jpg"
+          },
+          "createdAt": "2023-10-27T15:20:00Z",
+          "content": "Enjoying a relaxing afternoon with a good book. 📚",
+          "imageUrl": "https://source.unsplash.com/random/800x600?book",
+          "likes": 42,
+          "comments": [
+            {
+              "user": {
+                "name": "Carol Davis",
+                "profilePicUrl": "https://randomuser.me/api/portraits/women/3.jpg"
+              },
+              "content": "What are you reading?"
+            },
+            {
+               "user": {
+                  "name": "Alice Smith",
+                  "profilePicUrl": "https://randomuser.me/api/portraits/women/1.jpg"
+               },
+               "content": "Looks cozy!"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "user": {
+            "name": "Eva Foster",
+            "profilePicUrl": "https://randomuser.me/api/portraits/women/5.jpg"
+          },
+          "createdAt": "2023-10-27T17:10:00Z",
+          "content": "Sunset vibes! 🌅",
+          "imageUrl": "https://source.unsplash.com/random/800x600?sunset",
+          "likes": 60,
+          "comments": []
+        },
+        {
+          "id": 6,
+          "user": {
+            "name": "Frank Garcia",
+            "profilePicUrl": "https://randomuser.me/api/portraits/men/6.jpg"
+          },
+          "createdAt": "2023-10-27T19:05:00Z",
+          "content": "Trying out a new recipe tonight. 🍝",
+          "imageUrl": null,
+          "likes": 20,
+          "comments": [
+            {
+              "user": {
+                "name": "Eva Foster",
+                "profilePicUrl": "https://randomuser.me/api/portraits/women/5.jpg"
+              },
+              "content": "Yum!"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "user": {
+            "name": "Grace Hill",
+            "profilePicUrl": "https://randomuser.me/api/portraits/women/7.jpg"
+          },
+          "createdAt": "2023-10-27T21:30:00Z",
+          "content": "Movie night! 🍿",
+          "imageUrl": "https://source.unsplash.com/random/800x600?movie",
+          "likes": 30,
+          "comments": [
+            {
+              "user": {
+                "name": "Frank Garcia",
+                "profilePicUrl": "https://randomuser.me/api/portraits/men/6.jpg"
+              },
+              "content": "Which movie?"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "user": {
+            "name": "Henry Irwin",
+            "profilePicUrl": "https://randomuser.me/api/portraits/men/8.jpg"
+          },
+          "createdAt": "2023-10-28T09:00:00Z",
+          "content": "Morning workout done! 💪",
+          "imageUrl": null,
+          "likes": 50,
+          "comments": []
+        },
+          {
+          "id": 9,
+          "user": {
+            "name": "Ivy Jones",
+            "profilePicUrl": "https://randomuser.me/api/portraits/women/9.jpg"
+          },
+          "createdAt": "2023-10-28T10:30:00Z",
+          "content": "Visiting the museum today. 🎨",
+          "imageUrl": "https://source.unsplash.com/random/800x600?museum",
+          "likes": 28,
+          "comments": []
+        },
+        {
+          "id": 10,
+          "user": {
+            "name": "Jack King",
+            "profilePicUrl": "https://randomuser.me/api/portraits/men/10.jpg"
+          },
+          "createdAt": "2023-10-28T12:00:00Z",
+          "content": "Lunch break! 🍔",
+          "imageUrl": null,
+          "likes": 35,
+          "comments": []
+        }
+    ]
+}
